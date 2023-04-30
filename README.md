@@ -3,7 +3,7 @@
 
 ### Screenshot
 
-![](./design/desktop-screenshot-dark.png)
-![](./design/desktop-screenshot-light.png)
-![](./design/tablet-screenshot.png)
-![](./design/mobile-screenshot.png)
+![Desktop Dark](./design/desktop-screenshot-dark.png)
+![Desktop Light](./design/desktop-screenshot-light.png)
+![Tablet](./design/tablet-screenshot.png)
+![Mobile](./design/mobile-screenshot.png)
