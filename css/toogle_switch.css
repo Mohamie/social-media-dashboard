@@ -32,10 +32,14 @@
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: var(--card-dark-bg-color);
+    background-color: var(--card-bg-color);
     -webkit-transition: .4s;
     transition: .4s cubic-bezier(0,1,0.5,1);
     border-radius: 3px;
+  }
+
+  .slider.blue:hover{
+    background: linear-gradient(to right,hsl(210, 78%, 56%), hsl(146, 68%, 55%));
   }
   
   input:checked + .slider:before {
@@ -68,3 +72,4 @@
   input:checked + .slider.blue {
     background: #ccc;
   }
+ 

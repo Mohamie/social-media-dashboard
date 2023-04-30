@@ -6,11 +6,12 @@
     gap: 3rem;
     padding: 3rem;
     border-radius: .5rem;
-    background-color: var(--card-dark-bg-color);
+    background-color: var(--card-bg-color);
+    cursor: pointer;    
 }
 
-body.light .card{
-    background-color: var(--card-light-bg-color);
+.card:hover{
+    background-color: var(--card-hover-color);
 }
 
 
@@ -59,15 +60,11 @@ body.light .card{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--text-dark-primary-color);
+    color: var(--text-primary-color);
 }
 
 .social_followers, .overview_number{
-    color: var(--text-dark-primary-color);
-}
-
-body.light .social_followers, body.light .overview_number{
-    color: var(--text-light-primary-color);
+    color: var(--text-primary-color);
 }
 
 .social_followers > .number{
@@ -78,7 +75,7 @@ body.light .social_followers, body.light .overview_number{
 .social_followers > .followers{
     font-size: var(--medium-text-size);
     font-weight: 400;
-    color: var(--text-dark-secondary-color);
+    color: var(--text-secondary-color);
     letter-spacing: .5rem;
     text-transform: uppercase;
 }
@@ -117,9 +114,10 @@ body.light .social_followers, body.light .overview_number{
     border-top: .5rem solid transparent;
 }
 
-body.light .card.instagram{
-    background: var(--instagram-light-color);
+.card.instagram:hover{
+    background: var(--instagram-hover-color);
 }
+
 
 .card.youtube{
     border-top: .5rem solid var(--youtube-color);
@@ -158,19 +156,14 @@ body.light .card.instagram{
 
 .social_overview > .overview{
     font-weight: 700;
-    color: var(--text-dark-secondary-color);
+    color: var(--text-secondary-color);
 
 }
-body.light .overview{
-    color: var(--text-light-secondary-color);
-}
-
-
 
 .social_overview > .overview_number{
     font-size: 3rem;
     font-weight: 700;
-    color: var(--text-dark-primary-color);
+    color: var(--text-primary-color);
 
 }
 
