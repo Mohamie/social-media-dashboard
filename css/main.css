@@ -1,0 +1,171 @@
+:root {
+    /* Dark Theme */
+    --primary-dark-bg-color: hsl(230, 17%, 14%);
+    --main-dark-header-bg-color: hsl(232, 19%, 15%);
+    --text-dark-primary-color: hsl(0, 0%, 100%);
+    --text-dark-secondary-color: hsl(228, 34%, 66%);
+    --card-dark-bg-color: hsl(228, 28%, 20%);
+
+
+    /* Light Theme */
+    --primary-light-bg-color: hsl(0, 0%, 100%);
+    --main-light-header-bg-color: hsl(225, 100%, 98%);
+    --text-light-primary-color: hsl(230, 17%, 14%);
+    --text-light-secondary-color: hsl(217, 19%, 35%);
+    --card-light-bg-color: hsl(227, 47%, 96%);
+
+    /* Custom colors */
+    --green-color: hsl(163, 72%, 41%);
+    --red-color: hsl(356, 69%, 56%);
+
+    --facebook-color: hsl(208, 92%, 53%);
+    --twitter-color: hsl(203, 89%, 53%);
+    --instagram-color: linear-gradient(var(--card-dark-bg-color), var(--card-dark-bg-color)) padding-box,
+    linear-gradient(to right,hsl(37, 97%, 70%), hsl(329, 70%, 58%)) border-box;
+    --instagram-light-color: linear-gradient(var(--card-light-bg-color), var(--card-light-bg-color)) padding-box,
+    linear-gradient(to right,hsl(37, 97%, 70%), hsl(329, 70%, 58%)) border-box;
+    --youtube-color:  hsl(348, 97%, 39%);
+
+
+    --box-shadow-color: rgba(17,17,26,0.18);
+    --box-shadow: 0px 0px 20px 15px var(--box-shadow-color);
+
+    --small-text-size: 1.2rem;
+    --medium-text-size: 1.6rem;
+    --large-text-size: 2rem;
+
+    --tablet-breakpoint: 48.1rem;
+    --desktop-breakpoint: 76.9rem;
+}
+
+html {
+    font-size: 62.5%; 
+}
+
+*, *:before, *:after {
+    margin: unset;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: var(--medium-text-size);
+    font-family: 'Inter', sans-serif;
+    background-color: var(--primary-dark-bg-color);
+}
+
+body.light{
+    background-color: var(--primary-light-bg-color);
+}
+
+main{
+    position: relative;
+    height: 40rem;
+    border-radius: 0 0 3rem 3rem;
+    background-color: var(--main-dark-header-bg-color);
+}
+
+body.light main{
+    background-color: var(--main-light-header-bg-color);
+}
+
+main.light{
+    background-color: var(--main-light-header-bg-color);
+}
+
+@media(min-width: 1280px){
+    main{
+        height: 30rem;
+    }
+}
+
+.dashboard{
+    width: 35rem;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media(min-width: 600px){
+    .dashboard{
+        width: 55rem;
+    }
+}
+
+@media(min-width: 768px){
+    .dashboard{
+        width: 70rem;
+    }
+}
+
+@media(min-width: 1280px){
+    .dashboard{
+        width: 120rem;
+    }
+}
+
+.dashboard__header{
+    margin-bottom: 5rem;
+}
+
+.dashboard__header > .content > h1{
+    margin-bottom: .5rem;
+    color: var(--text-dark-primary-color);
+}
+
+body.light .dashboard__header .content h1{
+    color: var(--text-light-primary-color);
+}
+
+.dashboard__header > .content > h2 ,.dashboard__theme--swicther > p, .handle{
+    font-size: var(--medium-text-size);
+    font-weight: 700;
+    color: var(--text-dark-secondary-color);
+}
+
+body.light .dashboard__header .content h2 ,body.light .dashboard__theme--swicther p, body.light .handle{
+ color: var(--text-light-secondary-color);
+}
+
+.dashboard__header > .content > hr{
+    margin: 3rem 0;
+    border: unset;
+    height: .1rem;
+    background-color: var(--text-dark-secondary-color);
+}
+
+@media(min-width: 1280px){
+    .dashboard__header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dashboard__header > .content > hr{
+        display: none;
+    }
+}
+
+.dashboard__theme--swicther{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard__body{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-bottom: 5rem;
+}
+
+.overview__header{
+    color: var(--text-dark-primary-color);
+}
+
+body.light .overview__header{
+    color: var(--text-light-secondary-color);
+}
